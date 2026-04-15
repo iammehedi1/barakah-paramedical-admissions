@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট (BCPI) - বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল অনুমোদিত। কমিউনিটি প্যারামেডিক কোর্স (সিপি) - ২ বছর মেয়াদী।">
+    <meta name="keywords"
+        content="paramedical course, community paramedic, CP course, BCPI, Dhaka, Bangladesh, নার্সিং কাউন্সিল, প্যারামেডিক কোর্স">
+    <title>বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট (BCPI) | নার্সিং কাউন্সিল অনুমোদিত</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0D9E4F;
+            --primary-dark: #087A3C;
+            --primary-light: #E8F8EF;
+            --accent: #DC2626;
+            --dark: #1A1A2E;
+            --gray: #6B7280;
+            --light: #F9FAFB;
+            --white: #FFFFFF;
+            --gradient: linear-gradient(135deg, #0D9E4F 0%, #087A3C 100%);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Nav */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.6rem 1.5rem;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 48px;
+            width: auto;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .logo-tagline {
+            font-size: 0.6rem;
+            color: var(--gray);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.75rem;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--gradient);
+            color: white !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(13, 158, 79, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1002;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 1001;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--dark);
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            transition: var(--transition);
+        }
+
+        .mobile-menu a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu .nav-cta {
+            background: var(--gradient);
+            color: white;
+            border-radius: 50px;
+            margin-top: 1rem;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0 3rem;
+            background: linear-gradient(135deg, #E8F8EF 0%, #F0FDF4 50%, #ECFDF5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            width: 70%;
+            height: 140%;
+            background: radial-gradient(circle, rgba(13, 158, 79, 0.06) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.45rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.9rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(13, 158, 79, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--dark);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-visual {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-logo {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            box-shadow: 0 20px 60px rgba(13, 158, 79, 0.15);
+        }
+
+        /* Section */
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 1rem;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        /* Course Section */
+        .course-section {
+            padding: 4.5rem 0;
+            background: var(--white);
+        }
+
+        .course-highlight {
+            background: var(--primary-light);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            border: 1px solid rgba(13, 158, 79, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        .course-highlight h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .course-highlight .course-eng {
+            font-size: 0.95rem;
+            color: var(--gray);
+            margin-bottom: 0.75rem;
+        }
+
+        .course-meta-row {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .meta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .meta-badge.outline {
+            background: transparent;
+            color: var(--primary-dark);
+            border: 2px solid var(--primary);
+        }
+
+        .course-details-text {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Benefits */
+        .benefits {
+            padding: 4.5rem 0;
+            background: var(--gradient);
+            color: white;
+        }
+
+        .benefits .section-title {
+            color: white;
+        }
+
+        .benefits .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .benefit-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Admission */
+        .admission {
+            padding: 4.5rem 0;
+            background: var(--light);
+        }
+
+        .admission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .admission-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .admission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary);
+        }
+
+        .admission-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--dark);
+        }
+
+        .admission-card ul {
+            list-style: none;
+        }
+
+        .admission-card li {
+            padding: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .admission-card li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .seats-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Contact */
+        .contact {
+            padding: 4.5rem 0;
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--dark);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding: 0.9rem;
+            background: var(--light);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: var(--primary-light);
+        }
+
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-details a,
+        .contact-details p {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: var(--light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.15rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .director {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .director-avatar {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .director-info h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .director-info p {
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            height: 100%;
+            min-height: 380px;
+            box-shadow: var(--shadow);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 2.5rem 0 1.25rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.25rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.8rem;
+        }
+
+        /* Mobile Call */
+        .mobile-call-btn {
+            display: none;
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 1000;
+            background: var(--accent);
+            color: white;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 5px 20px rgba(220, 38, 38, 0.4);
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                margin: 0 auto 2rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                margin-top: 1rem;
+            }
+
+            .hero-logo {
+                width: 200px;
+                height: 200px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+                max-width: 280px;
+            }
+
+            .mobile-call-btn {
+                display: flex;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .admission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .map-container {
+                min-height: 300px;
+            }
+
+            .course-meta-row {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="bcpi_logo.png" alt="BCPI Logo">
+                <div class="logo-text">
+                    <span class="logo-name">BCPI</span>
+                    <span class="logo-tagline">বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#course">কোর্স</a></li>
+                <li><a href="#benefits">সুবিধা সমূহ</a></li>
+                <li><a href="#admission">ভর্তি তথ্য</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+                <li><a href="tel:+8801648160865" class="nav-cta">📞 কল করুন</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+        <a href="#course" class="mobile-nav-link">কোর্স</a>
+        <a href="#benefits" class="mobile-nav-link">সুবিধা সমূহ</a>
+        <a href="#admission" class="mobile-nav-link">ভর্তি তথ্য</a>
+        <a href="#contact" class="mobile-nav-link">যোগাযোগ</a>
+        <a href="tel:+8801648160865" class="nav-cta">📞 কল করুন</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">✓ বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল অনুমোদিত</div>
+                    <h1>চিকিৎসা পেশায় <span>নিশ্চিত ক্যারিয়ার</span> গড়ুন</h1>
+                    <p class="hero-subtitle">কমিউনিটি প্যারামেডিক কোর্স (সিপি) • ২ বছর মেয়াদী</p>
+                    <p class="hero-description">
+                        বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট (BCPI) থেকে নার্সিং কাউন্সিল
+                        অনুমোদিত সিপি কোর্স করে স্বাস্থ্যসেবায় আপনার ক্যারিয়ার শুরু করুন।
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="tel:+8801648160865" class="btn btn-primary">📞 কল করুন 01648-160865</a>
+                        <a href="https://wa.me/8801648160865" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+                        <a href="#course" class="btn btn-secondary">কোর্সের বিবরণ</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="bcpi_logo.png" alt="BCPI Logo" class="hero-logo" loading="eager" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course -->
+    <section class="course-section" id="course">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">আমাদের কোর্স</h2>
+                <p class="section-subtitle">নার্সিং কাউন্সিল অনুমোদিত পেশাদার প্যারামেডিকেল কোর্স</p>
+            </div>
+            <div class="course-highlight">
+                <h3>🩺 কমিউনিটি প্যারামেডিক কোর্স (সিপি)</h3>
+                <p class="course-eng">Community Paramedic Course (CP)</p>
+                <div class="course-meta-row">
+                    <span class="meta-badge">⏱️ ২ বছর মেয়াদী</span>
+                    <span class="meta-badge outline">📅 ৪ সেমিস্টার (৬ মাস অন্তর)</span>
+                    <span class="meta-badge outline">🏥 ইন্টার্নশিপ সহ</span>
+                </div>
+                <p class="course-details-text">
+                    বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল কর্তৃক অনুমোদিত এই কোর্সটি সম্পন্ন করে
+                    আপনি সরকারি-বেসরকারি হাসপাতাল, কমিউনিটি ক্লিনিক, এনজিও সহ বিভিন্ন প্রতিষ্ঠানে
+                    কর্মসংস্থানের সুযোগ পাবেন। অফলাইন ও অনলাইন উভয় ক্লাসের সুবিধা রয়েছে।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">সিপি কোর্সের সুযোগ সুবিধা সমূহ</h2>
+                <p class="section-subtitle">চিকিৎসা পেশায় ক্যারিয়ার গড়তে যা যা পাচ্ছেন</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <p>৬ মাস অন্তর সেমিস্টার — মোট ৪ সেমিস্টার</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <p>উপজেলা স্বাস্থ্য কমপ্লেক্স ও সদর হাসপাতালে ইন্টার্নীর সুযোগ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <p>বিভিন্ন সরকারী/বেসরকারী, এনজিও প্রতিষ্ঠানে চাকুরীর সুযোগ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📜</div>
+                    <p>বাংলাদেশ নার্সিং কাউন্সিল কর্তৃক সার্টিফিকেট ও রেজিঃ নম্বর পত্র প্রদান</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📅</div>
+                    <p>চাকুরী জীবীদের বিশেষ সুযোগ — ছুটির দিনে ক্লাসের ব্যবস্থা আছে</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏛️</div>
+                    <p>সরকারী কমিউনিটি ক্লিনিকে চাকুরীর সুযোগ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission -->
+    <section class="admission" id="admission">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ভর্তি তথ্য</h2>
+                <p class="section-subtitle">পরবর্তী ব্যাচে ভর্তি হতে এখনই যোগাযোগ করুন</p>
+            </div>
+            <div class="admission-grid">
+                <div class="admission-card">
+                    <h3>📋 ভর্তি যোগ্যতা</h3>
+                    <ul>
+                        <li>এসএসসি ও সমমান পাশ</li>
+                        <li>যে কোন সালে পাশ গ্রহণযোগ্য</li>
+                    </ul>
+                </div>
+                <div class="admission-card">
+                    <h3>📅 কোর্সের কাঠামো</h3>
+                    <ul>
+                        <li>মোট মেয়াদ: ২ বছর (৪ সেমিস্টার)</li>
+                        <li>প্রতিটি সেমিস্টার ৬ মাস</li>
+                        <li>অফলাইন ও অনলাইন ক্লাস</li>
+                    </ul>
+                </div>
+                <div class="admission-card">
+                    <h3>📞 ভর্তি প্রক্রিয়া</h3>
+                    <ul>
+                        <li>হটলাইন বা WhatsApp-এ যোগাযোগ করুন</li>
+                        <li>সরাসরি ইনস্টিটিউটে আসুন</li>
+                        <li>মূল সনদপত্র নিয়ে আসুন</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div class="seats-badge">🔥 ভর্তি চলছে — আসন সংখ্যা সীমিত!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">যোগাযোগ</h2>
+                <p class="section-subtitle">ভর্তির জন্য এখনই যোগাযোগ করুন</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>যোগাযোগের ঠিকানা</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>হটলাইন</h4>
+                            <a href="tel:+8801648160865">01648-160865</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>বিকাশ / সেকেন্ডারী</h4>
+                            <a href="tel:+8801920801415">01920-801415</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>ইমেইল</h4>
+                            <a href="mailto:dr.sayedahmedbd@gmail.com">dr.sayedahmedbd@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>ঠিকানা</h4>
+                            <p>৪৬, উত্তর মুগদা, ঢাকা-১২১৪<br>মুগদা মেডিকেল কলেজ হাসপাতালের নিকটে</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/8801648160865" target="_blank" class="social-link"
+                            title="WhatsApp">💬</a>
+                        <a href="mailto:dr.sayedahmedbd@gmail.com" class="social-link" title="Email">✉️</a>
+                    </div>
+                    <div class="director">
+                        <div class="director-avatar">সা</div>
+                        <div class="director-info">
+                            <h4>ডাঃ সাঈদ আহমেদ</h4>
+                            <p>পরিচালক</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2137857393393!2d90.43019731498275!3d23.73917098458749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9b4e3c0f6e7%3A0x4e9c3e0a7c0a5f6e!2sMugda%20Medical%20College%20Hospital!5e0!3m2!1sen!2sbd!4v1707392400000!5m2!1sen!2sbd"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট</h3>
+                    <p>বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল অনুমোদিত প্যারামেডিকেল ইনস্টিটিউট। কমিউনিটি প্যারামেডিক
+                        কোর্স (সিপি) — ২ বছর মেয়াদী। চিকিৎসা পেশায় আপনার ক্যারিয়ার গড়ুন।</p>
+                </div>
+                <div class="footer-links">
+                    <h4>লিংক</h4>
+                    <ul>
+                        <li><a href="#course">কোর্স</a></li>
+                        <li><a href="#benefits">সুবিধা সমূহ</a></li>
+                        <li><a href="#admission">ভর্তি তথ্য</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© ২০২৬ বারাকাহ কমিউনিটি প্যারামেডিকেল ইনস্টিটিউট (BCPI)। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Call -->
+    <a href="tel:+8801648160865" class="mobile-call-btn">📞</a>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Navbar shadow
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.style.boxShadow = window.scrollY > 50 ? '0 2px 20px rgba(0,0,0,0.08)' : 'none';
+        });
+    </script>
+</body>
+
+</html>
