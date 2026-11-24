@@ -1,4 +1,4 @@
-# BCPI Course and Admissions Website
+# Barakah Paramedical Admissions Website
 
 A Bengali-language website for prospective Community Paramedic students at Barakah Community Paramedical Institute in Dhaka. The page covers the program, admission eligibility and semester structure.
 
@@ -6,4 +6,4 @@ A Bengali-language website for prospective Community Paramedic students at Barak
 
 [index.html](index.html) contains the mobile-first page and its styling and interactions. The site gives visitors direct phone and WhatsApp links and a campus map.
 
-Open the file locally or visit the [published site](https://iammehedi1.github.io/bcpi-website/).
+Open the file locally or visit the [published site](https://iammehedi1.github.io/barakah-paramedical-admissions/).
